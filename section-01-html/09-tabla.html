@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      * {
+        font-family: arial, sans-serif;
+      }
+      img{
+        width: 10%;
+        height: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables</h1>
+
+    <p>
+      HTML tables allow web developers to arrange data into rows and columns.
+    </p>
+
+    <p>A table in HTML consists of table cells inside rows and columns.</p>
+
+    <h5>Syntax</h5>
+    <ul>
+      <li>table element = defines table</li>
+      <li>tr = defines table row</li>
+      <li>th = defines table head</li>
+      <li>td = defines table display</li>
+    </ul>
+    <hr />
+    <h2>Example Table 1</h2>
+    <table>
+      <tr>
+        <th>Artist / Band Name</th>
+        <th>Genre</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>The Strokes</td>
+        <td>Rock</td>
+        <td>New York, USA</td>
+      </tr>
+      <tr>
+        <td>Backstreet Boys</td>
+        <td>Pop</td>
+        <td>Orlando, Florida</td>
+      </tr>
+      <tr>
+        <td>Black Sabbath</td>
+        <td>Metal/Rock</td>
+        <td>Birmingham, England</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>Example Table 2</h2>
+    <table class="schedule">
+      <tr>
+        <th>Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td>9:00 - 21:00</td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>12:00-12:00</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>21:00-12:00</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+    </table>
+    <h2>Exercise Table</h2>
+    <table id="food-table">
+        <tr class="encabezado">
+            <th class="comida">Comida</th>
+            <th class="imagen">Imagen</th>
+            <th class="ais">Pais</th>
+            <th class="rating">Rating</th>
+        </tr>
+        <tr class="spaghetti">
+            <td>Spaghetti carbonara</td>
+            <td><img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/61FCB2B2-DB84-4A68-ABB8-F9FBA800BCA3/Derivates/FCB48A53-86F0-4697-BE75-7B7CE9B49EBE.jpg" alt="plato de spaghetti carbonara"></td>
+            <td>Italia</td>
+            <td>1</td>
+        </tr>
+        <tr class="tortilla">
+            <td>Tortilla de patatas</td>
+            <td><img src="https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2022/07/11/fotografia-de-una-tortilla-de-patata.jpeg" alt="tortilla de patatas"></td>
+            <td>España</td>
+            <td>3</td>
+        </tr>
+        <tr class="kebab">
+            <td>Kebab</td>
+            <td><img src="https://saborgourmet.com/wp-content/uploads/doner-kebab-pixabay.jpg" alt="carne de kebab"></td>
+            <td>Turquia</td>
+            <td>2</td>
+        </tr>
+        <tr class="patacon">
+            <td>Patacón</td>
+            <td><img src="https://www.laylita.com/recetas/wp-content/uploads/Patacones-o-tostones-caseros.jpg" alt="patacones fritos"></td>
+            <td>Panamá</td>
+            <td>4</td>
+        </tr>
+    </table>
+  </body>
+</html>
