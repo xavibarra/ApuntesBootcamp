@@ -9,3 +9,12 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Introducir links locales y externos
     - Introducir imagenes
     - Listas
+
+## 08 Noviembre
+
+- Iniciación CSS
+    - Colores
+    - Tipografías
+    - Background
+    - Borders
+    - Box-model
