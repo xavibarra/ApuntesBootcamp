@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise float</title>
+
+    <!-- style tag -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;            
+        }
+        .header{
+            background: black;
+            color: white;
+            text-align: center;
+            max-width: 90%;
+        }
+        .container{
+            max-width: 80%;
+        }
+        .box{
+            border: solid 1px ;
+            margin: 0px 0px 0px 0px;
+            height: 300px;
+        }
+        #box-1{
+            float: left;
+            width: 45%;
+        }
+        #box-2{
+            float: right;
+            width: 45%;
+        }
+        .clear{
+            clear: both;
+        }
+        .btn{
+            background-color: blue;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background: red;
+            color: black;
+        }
+        .footer{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .fbtn{
+            padding: 20px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>BOOTCAMP IRONHACK</h1>
+    </header>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h3>Hemos aprendido:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <a class="btn"href="#">IR</a>
+        </div>
+        <div class="box" id="box-2">
+            <h3>Vamos a aprender:</h3>
+            <ul>
+                <li>JAVASCRIPT</li>
+                <li>VUE</li>
+            </ul>
+            <a class="btn"href="#">IR</a>
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+            <div>09-11-2022</div>
+            <div class="fbtn">
+                <a class="fbtn"href="#">LOG IN</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
