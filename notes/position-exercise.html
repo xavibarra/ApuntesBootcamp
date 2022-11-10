@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position exercise</title>
+
+    <!-- styling tag -->
+    <style>
+        section{
+            height: 450px;
+            width: 450px;
+            background: rgb(188, 102, 102);
+            position: relative;
+            
+        }
+        section div:first-child{
+            position:absolute;
+            background: black;
+            height: 100px;
+            width: 100px;
+            top:0;
+            left: 0;
+            background-image: url("https://www.hogarmania.com/archivos/202110/oso-perezoso-portada-1280x720x80xX.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div:nth-child(2){
+            position:absolute;
+            background: black;
+            height: 100px;
+            width: 100px;
+            bottom: 0;
+            left: 0;
+            background-image: url("https://images.ecestaticos.com/pqIAcGCEagnkjdIBVKVbC9i5FH4=/0x0:1920x1278/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe8e%2Fe27%2F2bf%2Fe8ee272bfd36f69679936351209d708c.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div:nth-child(3){
+            position:absolute;
+            background: black;
+            height: 100px;
+            width: 100px;
+            bottom: 0;
+            right: 0;
+            background-image: url("http://c.files.bbci.co.uk/653B/production/_95151952_mediaitem95151800.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div:last-child{
+            position:absolute;
+            height: 100px;
+            width: 100px;
+            top: 0;
+            right:0;
+            background-image: url("https://www.ngenespanol.com/wp-content/uploads/2022/09/tigre-de-bengala-el-gran-felino-de-las-selvas-de-la-india.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</body>
+</html>
