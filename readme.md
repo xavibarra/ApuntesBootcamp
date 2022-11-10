@@ -18,3 +18,10 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Background
     - Borders
     - Box-model
+
+## 09 Noviembre
+
+- CSS
+    - Forms
+    - Backgroung image
+    - Buttons
