@@ -58,3 +58,7 @@ h5{
 #section-3{
     margin-top: 5%;
 }
+#section-3 ol{
+    list-style: none;
+    
+}
