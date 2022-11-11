@@ -25,3 +25,11 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Forms
     - Backgroung image
     - Buttons
+
+## 10 Noviembre
+
+- CSS
+    - Media query
+    - Flex box
+    - Inline vs block
+    - Positions
