@@ -5,78 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Spotify Clone</title>
+    
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-
+  
     <!-- header -->
-    <header>
+    <header class="javascript-example">
+      
+      <!-- spotify logo -->
+      <img class="spotify-logo"src="images/spotify-logo.png" alt="spotify logo">
+      <!-- nav -->
       <nav>
-        <img class="spotify-img"src="images/spotify-logo.png" alt="spotify logo">
-        <div>
-          <ul class="header-list">
-            <li><a href="#"></a>Premium</li>
-            <li><a href="#"></a>Discover</li>
-            <li><a href="#"></a>Help</li>
-            <li><a href="#"></a>Download</li>
-          </ul>
-        </div>
+        <ul>
+         <li><a href="#Premium">Premium</a></li>
+         <li><a href="#Discover">Discover</a></li>
+         <li><a href="#Help">Help</a></li>
+         <li><a href="#Download">Download</a></li>
+        </ul>
       </nav>
-      <div class="background-img">
-        <h1>Music for everyone.</h1>
-        <p>Spotify is now free on mobile, tablet and computer. Listen to the right music, wherever you are.</p> 
-      </div>
     </header>
 
-    <!-- main -->
-    <main>
-      <!-- section-1 -->
-      <section id="section1">
-        <div>
-          <h3>What's on Spotify?</h3>
+    <!-- section-1 image section -->
+    <section class="img-container">
+      <img id="img-back"src="images/landing.jpg" alt="">
+      <div class="centered-text">
+        <span class="centered-title">Music is for everyone.</span>
+        <br>
+        <span>Spotify is now free on mobile, tablet and computer.</span>
+        <br>
+        <span>Listen to the right music, wherever you are.</span>
+      </div>
+    </section>
+
+    <!-- section-2  whats on spotify -->
+    <section id="advantages">
+      <h1><span>What's on Spotify?</span></h1>
+      <!-- father element -->
+      <div class="external-div">
+        <!-- child elements with class of interal-div -->
+        <div class="internal-div">
+          <img src="images/music-icon.png" alt="Music icon">
+          <h2>Millions of songs</h2>
+          <p>There are millions of songs on Spotify</p>
         </div>
-        <!-- boxes section-1 -->
-        <div class="boxes">
-          <div>
-            <img src="images/music-icon.png" alt="music icon">
-            <h4>Millons of Songs</h4>
-            <p>There are millions of songs on Spotify</p>
-          </div>
-          <div>
-            <img src="images/high-quality-icon.png" alt="sound icon">
-            <h4>HD Music</h4>
-            <p>HD Music Listen to music as if you were listening live</p>
-          </div>
-          <div>
-            <img src="images/devices-icon.png" alt="devices icon">
-            <h4>Stream Everywhere</h4>
-            <p>Stream Everywhere Stream music on your smartphone, tablet or computer</p>
-          </div>
+        <div class="internal-div">
+          <img src="images/high-quality-icon.png" alt="">
+          <h2>HD Music</h2>
+          <p>Listen to music as if you were listening live</p>
         </div>
-      </section>
-      <!-- section-2 -->
-      <section>
-        <div>
-          <h3>It’s as yeezy as Kanye West.</h3>
+        <div class="internal-div">
+          <img src="images/devices-icon.png" alt="">
+          <h2>Stream Everywhere</h2>
+          <p>Stream music on your smartphone, tablet or computer</p>
         </div>
-        <!-- boxes section-2 -->
-        <div>
-          <div>
-            <h4>Search</h4>
-            <p>Know what you want to listen to? Just search and hit play.</p>
-            <h4>Browse</h4>
-            <p>Check out the latest charts, brand new releases and great playlists for right now.</p>      
-            <h4>Discover</h4>
-            <p>Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</p>
-          </div>
-          <div>
-            <img src="images/spotify-icon-white.png" alt="spotify icon white">
-          </div>
-          <div>
-            <img src="images/spotify-app.jpg" alt="spotify movile">
-          </div>
+      </div>
+    </section>
+
+    <!-- section-3 green  -->
+    <section id="green-section">
+      <div class="external-div">
+        <div class="internal-div">
+          <h1><span>It's as yeezy as Kenye West.</span></h1>
+          <h2>Search</h2>
+          <p>Know what you want to listen to? Just search and hit play.</p>
+
+          <h2>Browse</h2>
+          <p>Check out the latest charts, brand new releases and great playlists for right now.</p>
+
+          <h2>Discover</h2>
+          <p>Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</p>
         </div>
-      </section>
-    </main>
+        <div class="internal-div2">
+          <img class="white-spotify"src="images/spotify-icon-white.png" alt="Spotify icon white">
+        </div>
+        <div class="internal-div3">
+          <img class="app-img" src="images/spotify-app.jpg" alt="Spotify App">
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const changeHeaderColor = document.querySelector(".javascript-example");
+
+      window.onscroll = function () {
+        const scroll = window.pageYOffset;
+
+        if (scroll > 600) {
+          changeHeaderColor.classList.add("js-background");
+        } else {
+          changeHeaderColor.classList.remove("js-background");
+        }
+      };
+    </script>
   </body>
 </html>
+
+  
