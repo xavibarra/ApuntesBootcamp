@@ -33,3 +33,10 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Flex box
     - Inline vs block
     - Positions
+
+## 11 Noviembre
+
+- JavaScript
+    - First contact
+- CSS
+    - Grid
