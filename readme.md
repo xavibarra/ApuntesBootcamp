@@ -40,3 +40,12 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - First contact
 - CSS
     - Grid
+
+## 12 Noviembre
+
+- JavaScript
+    - Data types
+    - Variables
+    - Operators
+    - Funciones
+    - Methods
