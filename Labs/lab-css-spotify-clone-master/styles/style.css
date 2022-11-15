@@ -209,3 +209,42 @@ nav a{
 #green-section .internal-div3{
     width: 45%;
 }
+@media (max-width: 991.98px) {
+    /* ITEMS */
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-bottom: 10px;
+
+    }
+    #advantages .external-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #advantages .internal-div img {
+        width: 10vh;
+        height: 10vh;
+        margin-top: 30px;
+    }
+    /* FOOTER */
+    #green-section .external-div {
+        background: #00B172;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #green-section  h2 {
+        margin: 3vh 0 0 0;
+    }
+    .app-img{
+         display: none;
+    }
+   
+}
