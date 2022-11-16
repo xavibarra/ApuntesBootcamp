@@ -41,11 +41,19 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
 - CSS
     - Grid
 
-## 12 Noviembre
+## 14 Noviembre
 
 - JavaScript
     - Data types
     - Variables
     - Operators
-    - Funciones
+    - Funcions
+    
+## 15 Noviembre
+
+- JavaScript 
     - Methods
+    - Objects
+    - Arrays
+    - Loops
+    - Conditionals
