@@ -1,10 +1,6 @@
 //.push añadir al final del array
 //.unshift añadir al principio de un array
 
-
-
-
-
 let newArray = (array,first,last) => {
     array.unshift(first);
     array.push(last);
