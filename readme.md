@@ -57,3 +57,9 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Arrays
     - Loops
     - Conditionals
+
+## 16 Noviembre
+
+- JavaScript
+    - Lab JS
+    - DOM
