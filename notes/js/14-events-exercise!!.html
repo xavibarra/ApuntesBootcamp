@@ -48,6 +48,9 @@
       const ex1h1 = document.getElementById("ex1h1");
       const ex1btn = document.getElementById("ex1btn");
 
+      const changeText = () => (ex1h1.innerText = "Ya me han dado click");
+      ex1btn.addEventListener("click", changeText);
+
       // Ejercicio 2. Toggle.
       // Imaginemos que tenemos un pequeño aparato que se puede encender y apagar con un botón.
       // Vamos a crear un <h1> que contendrá el texto "OFF". Debajo colocaremos un botón que contenga el texto "encender". De momento nuestro aparato está apagado.
@@ -55,6 +58,29 @@
 
       const ex2h1 = document.getElementById("ex2h1");
       const ex2btn = document.getElementById("ex2btn");
+
+      //En este ejercicio hacemos la función dentro del even list, a diferencia del anterior que declarabamos primer la funcion y luego la llamabamos
+       ex2btn.addEventListener('click', () =>{
+         if (ex2h1.innerText==='OFF'){
+             ex2h1.innerText ='ON';
+             ex2btn.innerText = 'Apagar';
+         }else{
+             ex2h1.innerText ='OFF';
+             ex2btn.innerText = 'encender';
+         }
+       })
+
+//Esta es otra manera de llegar al mismo resultado
+
+    //    ex2btn.onclick=()=>{
+    //      if (ex2h1.innerText==='OFF'){
+    //          ex2h1.innerText ='ON';
+    //          ex2btn.innerText = 'Apagar';
+    //      }else{
+    //          ex2h1.innerText ='OFF';
+    //          ex2btn.innerText = 'encender';
+    //      }
+    //    }
 
       // Ejercicio 3. Contador.
       // Vamos a crear un pequeño contador que sume y reste valores. Primero crearemos un <h1> con un valor inicial de '0'. Después crearemos CUATRO botones: el primero será "Doble click -2", el segundo "Click -1", el tercero "Click +1" y el cuarto "Doble click +2".
@@ -67,12 +93,29 @@
       const ex3btn3 = document.getElementById("ex3btn3");
       const ex3btn4 = document.getElementById("ex3btn4");
 
+      ex3btn1.addEventListener('dblclick',()=>{
+        ex3h1.innerText=parseInt(ex3h1.innerText)-2;
+      });
+      ex3btn2.addEventListener('click',()=>{
+        ex3h1.innerText=parseInt(ex3h1.innerText)-1;
+      });
+      ex3btn3.addEventListener('click',()=>{
+        ex3h1.innerText=parseInt(ex3h1.innerText)+1;
+      });
+      ex3btn4.addEventListener('dblclick',()=>{
+        ex3h1.innerText=parseInt(ex3h1.innerText)+2;
+      });
+
       // Ejercicio 4. Class Toggle
       // Creamos un botón que tenga una clase "green" y un texto como 'I'm green'.
       // Cuando el user dé click al botón, deberíamos cambiar el texto del botón por 'I'm red' y su color para que sea rojo.
       // Cuando el botón sea rojo y el user le vuelva a dar, deberíamos volver a setearlo a su estado inicial.
 
       const ex4btn = document.getElementById("ex4btn");
+
+      ex4btn.addEventListener('click', () =>{
+        ex4btn.classList.toggle('red') //red es una clase declarada en el CSS
+      })
 
       // Ejercicio 5. Añadir a listas con inputs - ADVANCED
       // Vamos a crear una ordered list que no contenga ningún elemento. Después creamos un input y un botón que contenga el texto "Añadir".
@@ -82,6 +125,17 @@
       const list = document.querySelector("ol");
       const input = document.getElementById("input");
       const ex5btn = document.getElementById("ex5btn");
+
+      ex5btn.addEventListener('click',()=>{
+        if(!input.value){
+            input.placeholder= 'Please enter a value';
+        } else{
+            const liItem = document.createElement('li');
+            liItem.innerText=input.value;
+            list.appendChild(liItem);
+            input.value='';
+        };
+      });
     </script>
   </body>
 </html>
