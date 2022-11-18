@@ -63,3 +63,10 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
 - JavaScript
     - Lab JS
     - DOM
+
+## 17 Noviembre
+
+- JavaScript
+    - Methods
+    - Lab JS
+    - Events
