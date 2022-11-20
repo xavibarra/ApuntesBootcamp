@@ -2002,10 +2002,9 @@ const movies = [
   }
 ];
 
-const sports = [];
 
 if (typeof module !== 'undefined') {
   module.exports = movies;
 }
 
-export { movies };
+export {movies};

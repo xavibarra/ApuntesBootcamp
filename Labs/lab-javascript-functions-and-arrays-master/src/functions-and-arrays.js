@@ -124,7 +124,15 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray() {
+  let newArray = [];
+  for(let i=0; i<wordsArray.length;i++){
+    if (wordsArray.indexOf(wordsArray[i])== i ){
+      newArray.push(wordsArray[i])
+    }
+  }
+  return newArray;
+  }
 
 
 
