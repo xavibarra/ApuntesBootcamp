@@ -73,29 +73,47 @@ obtainInstruction("steak", 0).then((paso) => {
 async function makeBroccoli() {
   //paso 1
   const step0 = await obtainInstruction("broccoli", 0);
-  document.querySelector("#broccoli").innerHTML += `<li>${step0}</li>`;
+  document.getElementById("broccoli").innerHTML += `<li>${step0}</li>`;
   //paso 2
   const step1 = await obtainInstruction("broccoli", 1);
-  document.querySelector("#broccoli").innerHTML += `<li>${step1}</li>`;
+  document.getElementById("broccoli").innerHTML += `<li>${step1}</li>`;
   //paso 3
   const step2 = await obtainInstruction("broccoli", 2);
-  document.querySelector("#broccoli").innerHTML += `<li>${step2}</li>`;
+  document.getElementById("broccoli").innerHTML += `<li>${step2}</li>`;
   //paso 4
   const step3 = await obtainInstruction("broccoli", 3);
-  document.querySelector("#broccoli").innerHTML += `<li>${step3}</li>`;
+  document.getElementById("broccoli").innerHTML += `<li>${step3}</li>`;
   //paso 5
   const step4 = await obtainInstruction("broccoli", 4);
-  document.querySelector("#broccoli").innerHTML += `<li>${step4}</li>`;
+  document.getElementById("broccoli").innerHTML += `<li>${step4}</li>`;
   // paso 6
   const step5 = await obtainInstruction("broccoli", 5);
-  document.querySelector("#broccoli").innerHTML += `<li>${step5}</li>`;
+  document.getElementById("broccoli").innerHTML += `<li>${step5}</li>`;
   //paso 7
   const step6 = await obtainInstruction("broccoli", 6);
-  document.querySelector("#broccoli").innerHTML += `<li>${step6}</li>`;
+  document.getElementById("broccoli").innerHTML += `<li>${step6}</li>`;
   //último paso y quitamos el hidden para poder ver la imagen
-  document.querySelector("#broccoli").innerHTML += `<li>Broccoli is ready!</li>`;
-  document.querySelector("#broccoliImg").removeAttribute("hidden");
+  document.getElementById("broccoli").innerHTML += `<li>Broccoli is ready!</li>`;
+  document.getElementById("broccoliImg").removeAttribute("hidden");
 }
 makeBroccoli();
 // Bonus 2 - Promise all
-// ...
+const paso0 = obtainInstruction("brusselsSprouts", 0);
+const paso1 = obtainInstruction("brusselsSprouts", 1);
+const paso2 = obtainInstruction("brusselsSprouts", 2);
+const paso3 = obtainInstruction("brusselsSprouts", 3);
+const paso4 = obtainInstruction("brusselsSprouts", 4);
+const paso5 = obtainInstruction("brusselsSprouts", 5);
+const paso6 = obtainInstruction("brusselsSprouts", 6);
+const paso7 = obtainInstruction("brusselsSprouts", 7);
+
+
+Promise.all([paso0, paso1, paso2, paso3, paso4, paso5, paso6,paso7]).then((valorDelArray) => {
+  valorDelArray.forEach((instruction) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${instruction}</li>`
+  });
+
+  document.querySelector("#brusselsSprouts").innerHTML += `<li>Brussels Sprouts are ready!</li>`;
+  document.querySelector("#brusselsSproutsImg").removeAttribute("hidden");
+
+}).catch((error) => console.log(error));
