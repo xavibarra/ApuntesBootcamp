@@ -77,4 +77,4 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Lab
     - Callback
     - Promise 
-    - async/wait
+    - Async/wait
