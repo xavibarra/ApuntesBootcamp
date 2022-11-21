@@ -73,7 +73,7 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
 
 # 18 Noviembre
 
--JavaScript
+- JavaScript
     - Lab
     - Callback
     - Promise 
