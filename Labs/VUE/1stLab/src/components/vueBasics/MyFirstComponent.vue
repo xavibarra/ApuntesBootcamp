@@ -1,12 +1,11 @@
 <!-- Aquí es donde clocaremos nuestro HTML -->
 <template>
-    <p>My nombre es Xavi y me gusta programar</p>
-
-    <!-- Usando text interpolation aka syntax de bigotes -->
     <h1>{{xavi}}</h1>
     <h1>Nací en {{cityOfBirth}} y tengo {{age}} años</h1>
 
     <h2>Hola me llamo {{myInfo.name}} {{myInfo.secondName}} tengo {{myInfo.age}} nací el {{myInfo.dayOfBirth}}. Mis hobbies son {{myInfo.hobbies[0]}}, {{myInfo.hobbies[1]}} y {{myInfo.hobbies[2]}}. My comida favorita es {{favoriteFood}} y mi pelicula favorita es {{favoriteFilm}} la he visto {{timesSaw}} veces</h2>
+
+    <button @click="helloWorld">Click me!</button>
 </template>
 <!-- Aquí es donde clocaremos nuestro JS -->
 <script setup>
@@ -16,9 +15,9 @@
 
 //PASOS:
 //Primero tenemos que importar estos metodos desde la libreria de vue
+
 import { ref, reactive } from "vue";
 
-//Vamos a declara variables que contengan el metodo dentro para poder trabajar correctamente con los datos que sean reactivos
 const xavi = "Mi nombre es XaviB y me gusta mucho programar"
 const cityOfBirth = ref("Sitges");
 const age = ref(23);
@@ -37,6 +36,9 @@ const favoriteFood = ref("spaghetti carbonara");
 const timesSaw = ref(7);
 
 
+const helloWorld = () =>{
+    console.log("Hello world!");
+}
 </script>
 <!-- Aquí es donde clocaremos nuestro CSS -->
 <style></style>
