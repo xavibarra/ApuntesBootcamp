@@ -78,3 +78,14 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Callback
     - Promise 
     - Async/wait
+
+# 21-25 Noviembre
+
+- Mid-term project
+
+# 28 Noviembre
+
+- Vue
+    - Introducción a Vue
+    - Conceptos básicos Vue
+    - Lab 1 Vue
