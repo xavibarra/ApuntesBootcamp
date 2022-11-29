@@ -7,6 +7,9 @@
     <h1>Nací en {{cityOfBirth}} y tengo {{age}} años</h1>
 
     <h2>Hola me llamo {{myInfo.name}} {{myInfo.secondName}} tengo {{myInfo.age}} nací el {{myInfo.dayOfBirth}}. Mis hobbies son {{myInfo.hobbies[0]}}, {{myInfo.hobbies[1]}} y {{myInfo.hobbies[2]}}. My comida favorita es {{favoriteFood}} y mi pelicula favorita es {{favoriteFilm}} la he visto {{timesSaw}} veces</h2>
+
+    <hr>
+   
 </template>
 <!-- Aquí es donde clocaremos nuestro JS -->
 <script setup>
@@ -39,4 +42,9 @@ const timesSaw = ref(7);
 
 </script>
 <!-- Aquí es donde clocaremos nuestro CSS -->
-<style></style>
+<style>
+    hr{
+        height: 2px;
+        background: black;
+    }
+</style>

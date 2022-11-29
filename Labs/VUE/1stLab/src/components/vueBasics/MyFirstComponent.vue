@@ -6,6 +6,7 @@
     <h2>Hola me llamo {{myInfo.name}} {{myInfo.secondName}} tengo {{myInfo.age}} nací el {{myInfo.dayOfBirth}}. Mis hobbies son {{myInfo.hobbies[0]}}, {{myInfo.hobbies[1]}} y {{myInfo.hobbies[2]}}. My comida favorita es {{favoriteFood}} y mi pelicula favorita es {{favoriteFilm}} la he visto {{timesSaw}} veces</h2>
 
     <button @click="helloWorld">Click me!</button>
+    <!-- en lugar del click la versión larga es: v-on:click="helloWorld()" -->
 </template>
 <!-- Aquí es donde clocaremos nuestro JS -->
 <script setup>

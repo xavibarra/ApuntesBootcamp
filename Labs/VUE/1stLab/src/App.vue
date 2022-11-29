@@ -16,7 +16,7 @@ import MyFirstComponentVue from './components/vueBasics/MyFirstComponent.vue';
 
   <main>
     <MyFirstComponentVue/>
-  </main>
+    </main>
 </template>
 
 <style scoped>
