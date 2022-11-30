@@ -1,11 +1,18 @@
 <script setup>
+import { ref } from "vue";
 import HelloWorld from './components/HelloWorld.vue';
 import MyFirstComponentVue from './components/vueBasics/MyFirstComponent.vue';
 
 import TextDirectiveVue from './components/vueBasics/2-TextDirective.vue';
+import HtmlDirection from './components/vueBasics/3-HtmlDirection.vue';
+import props from './components/vueBasics/props.vue';
+
+const myNumber = ref(23);
+
 </script>
 
 <template>
+<section>
   <header>
     <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
 
@@ -17,7 +24,26 @@ import TextDirectiveVue from './components/vueBasics/2-TextDirective.vue';
   <main>
     <MyFirstComponentVue/>
     <TextDirectiveVue/>
+    <HtmlDirection/>
+    
+      <!-- <props
+        name="Xavi"
+        age="23"
+        ocupation="Student"
+        birthPlace="Barcelona"
+        currentLocation="sitges"
+      /> -->
+    <props 
+    name="Xavi"
+    :age=myNumber
+    ocupation="student"
+    birthPlace="Barcelona"
+    currentlocation="Sitges"
+    />
+    
+    
   </main>
+</section>
 </template>
 
 <style scoped>
