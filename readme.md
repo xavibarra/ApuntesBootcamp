@@ -89,3 +89,17 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Introducción a Vue
     - Conceptos básicos Vue
     - Lab 1 Vue
+
+# 29 Noviembre
+
+- Vue
+    - Binding
+    - Conditionals
+    - Lab 2 Vue
+
+# 30 Noviembre
+
+- Vue
+    - Bucles en vue
+    - Slots
+    - Props
