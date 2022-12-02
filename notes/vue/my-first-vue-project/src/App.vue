@@ -6,7 +6,8 @@ import MyFirstComponentVue from './components/vueBasics/MyFirstComponent.vue';
 import TextDirectiveVue from './components/vueBasics/2-TextDirective.vue';
 import HtmlDirection from './components/vueBasics/3-HtmlDirection.vue';
 import props from './components/vueBasics/props.vue';
-
+import ComputedProperties from './components/vueBasics/8-ComputedProperties.vue';
+import Formulario from './components/vueBasics/9-form.vue'
 const myNumber = ref(23);
 
 </script>
@@ -40,7 +41,8 @@ const myNumber = ref(23);
     birthPlace="Barcelona"
     currentlocation="Sitges"
     />
-    
+    <ComputedProperties/>
+    <Formulario/>
     
   </main>
 </section>
