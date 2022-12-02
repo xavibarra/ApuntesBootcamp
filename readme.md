@@ -103,3 +103,11 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
     - Bucles en vue
     - Slots
     - Props
+
+# 1 Diciembre
+
+-Vue
+    - Lab 3
+    - Methods
+    - Computed properties
+    - Two way data
