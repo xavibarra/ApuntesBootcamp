@@ -8,6 +8,8 @@ import HtmlDirection from './components/vueBasics/3-HtmlDirection.vue';
 import props from './components/vueBasics/props.vue';
 import ComputedProperties from './components/vueBasics/8-ComputedProperties.vue';
 import Formulario from './components/vueBasics/9-form.vue'
+import Watchers from "./components/vueBasics/watchers/watchers.vue";
+import events from "./components/vueBasics/events/events.vue";
 const myNumber = ref(23);
 
 </script>
@@ -43,7 +45,8 @@ const myNumber = ref(23);
     />
     <ComputedProperties/>
     <Formulario/>
-    
+    <Watchers/>
+    <events/>
   </main>
 </section>
 </template>

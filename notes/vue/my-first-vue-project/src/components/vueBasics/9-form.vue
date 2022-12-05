@@ -1,11 +1,11 @@
 <template>
 <section>
     <hr>
-    <h1>FORMULARIO</h1>
-    <div>
+    <h1 class="titulo">FORMULARIO</h1>
+    <div class="container">
         <form @submit.prevent="submitForm">
-            <div id="user-input-formName-data">
-                <label for="name">Enter Name</label>
+            <div id="user-input-formName-data" class="formQuestion">
+                <label for="name" class="formLabel">Enter name</label>
                 <input
                     type="text"
                     autocomplete="off"
@@ -13,8 +13,8 @@
                     v-model="formValues.formName"
                 />
             </div>
-            <div id="user-input-formEmail-data">
-                <label for="email">Enter email</label>
+            <div id="user-input-formEmail-data" class="formQuestion">
+                <label for="email" class="formLabel">Enter email</label>
                 <input
                     type="email"
                     autocomplete="off"
@@ -22,8 +22,8 @@
                     v-model="formValues.formEmail"
                 />
             </div>
-            <div id="user-input-artist-data">
-                <label for="artist">Favourite artist</label>
+            <div id="user-input-artist-data" class="formQuestion">
+                <label for="artist" class="formLabel">Favourite artist</label>
                 <select name="artist" id="artist" v-model="formValues.artist">
                     <option>Select your favourite artist:</option>
                     <option value="Dua Lipa">Dua Lipa</option>
@@ -33,39 +33,39 @@
                     <option value="the Strokes">The Strokes</option>
                 </select>
             </div>
-            <div id="consume">
-                <label for="consume">Do you consume alcohol or drugs?</label>
+            <div id="consume" class="formQuestion">
+                <label for="consume" class="formLabel">Do you consume alcohol or drugs?</label>
                 <input
                     type="checkbox"
                     id="consume"
                     v-model="formValues.consume"
                 />
             </div>
-            <div id="black">
-                <label for="black">Are you going to come dressed in black?</label>
+            <div id="black" class="formQuestion">
+                <label for="black" class="formLabel">Are you going to come dressed in black?</label>
                 <input
                     type="checkbox"
                     id="black"
                     v-model="formValues.black"
                 />
             </div>
-            <div id="age">
-                <label for="age">Are you over 21 years old?</label>
+            <div id="age" class="formQuestion">
+                <label for="age" class="formLabel">Are you over 21 years old?</label>
                 <input
                     type="checkbox"
                     id="age"
                     v-model="formValues.age"
                 />
             </div>
-            <div id="group">
-                <label for="group">Are you coming with a group of more than 2 people?</label>
+            <div id="group" class="formQuestion">
+                <label for="group" class="formLabel">Are you coming with a group of more than 2 people?</label>
                 <input
                     type="checkbox"
                     id="group"
                     v-model="formValues.group"
                 />
             </div>
-            <input type="submit" value="Submit Form" />
+            <input type="submit" value="Submit Form" class="submitButton"/>
         </form>
 
     </div>
@@ -97,19 +97,50 @@ const submitForm = () => {
     //   console.log("Form Values", formValues);
     alert(`
         !!SUCCESS!!
-        We succesfully received your job application form. We will get in contact with you in up to 7 days. Thanks for applying to...
+        We succesfully received your job application form. 
+        We will get in contact with you in up to 7 days. 
+        Thanks for applying to...
         Name: ${formValues.formName}
         Email: ${formValues.formEmail}
-        Artist: ${formValues.artist}
-        consume: ${formValues.consume}
-        black: ${formValues.black}
-        age: ${formValues.age}
-        group: ${formValues.group}
+        Favourite Artist: ${formValues.artist}
+        Do you consume alcohol or drugs?: ${formValues.consume ? "Yes":"No"}
+        Are you going to come dressed in black?: ${formValues.black ? "Yes":"No"}
+        Are you over 21 years old?: ${formValues.age ? "Yes":"No"}
+        Are you coming with a group of more than 2 people?: ${formValues.group ? "Yes":"No"}
         `);
 };
 </script>
 
-<style>
+<style scoped>
+.titulo{
+    text-align: center;
+    background: wheat;
+}
+.container{
+    text-align: center;
+}
+
+.formQuestion{
+    margin: 10px;
+   
+}
+.formLabel{
+    margin-right: 5px;
+}
+.submitButton{
+    width: 150px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+}
+.submitButton:hover{
+    color: black;
+    background: white;
+}
+form{
+    background: whitesmoke;
+    padding: 20px;
+}
 
 
 </style>

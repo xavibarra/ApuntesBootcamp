@@ -1,0 +1,18 @@
+ [
+    {
+        "response": "yes",
+        "image": "https://media3.giphy.com/media/SXOZY9erxavfELiyqv/giphy.gif",
+        "userResponse":"Yey te gusta la pizza"
+    },
+    {
+        "response": "no",
+        "image": "https://media0.giphy.com/media/WpaVhEcp3Qo2TjwyI1/giphy.gif",
+        "userResponse":"Que raro eres"
+    },
+    {
+        "response": "",
+        "image": "https://media.tenor.com/qXBO-dDP5skAAAAC/funny-japan-run-funny.gif",
+        "userResponse":"respuesta invalida"
+        }
+
+]
