@@ -106,8 +106,15 @@ En este readme veremos un breve resumen de lo que hemos realizado cada dia en la
 
 # 1 Diciembre
 
--Vue
+- Vue
     - Lab 3
     - Methods
     - Computed properties
     - Two way data
+
+# 2 Diciembre
+
+- Vue
+    - Watchers
+    - Events
+    - Hooks
