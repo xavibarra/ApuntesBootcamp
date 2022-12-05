@@ -10,6 +10,7 @@ import ComputedProperties from './components/vueBasics/8-ComputedProperties.vue'
 import Formulario from './components/vueBasics/9-form.vue'
 import Watchers from "./components/vueBasics/watchers/watchers.vue";
 import events from "./components/vueBasics/events/events.vue";
+import counter from './components/vueBasics/Counter.vue'
 const myNumber = ref(23);
 
 </script>
@@ -47,6 +48,7 @@ const myNumber = ref(23);
     <Formulario/>
     <Watchers/>
     <events/>
+    <counter/>
   </main>
 </section>
 </template>
